@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburans</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex 
+  items-center z-10 ">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Liburans</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button name="hamburger" id="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full 
+              lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none
+              dark:bg-dark dark:shadow-slate-500 dark:lg:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#destinasi"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Destinasi
+                                    Favorit</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text- dark:text-white">Kontak</a>
+                            </li>
+                            <li class="flex items-center pl-8 mx-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500
+                                          ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-20 lg:pt-28 lg:pb-0 dark:bg-dark">
+        <div class="container h-full">
+            <div class="flex flex-wrap-reverse">
+
+                <div class="w-full self center px-4 lg:w-1/2 lg:pt-32">
+                    <h1 class=" font-extrabold text-dark text-5xl mx-1 lg:text-5xl dark:text-white">
+                        Liburan & nikmati
+                        <span class="text-primary">tempat baru</span> di
+                        Indonesia
+                    </h1>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Deleniti quaerat ex explicabo de
+                    </p>
+
+                    <a href="#" class="text-base font-semibold text-white bg-primary
+                py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition 
+                duration-300 ease-in-out">Hubungi Saya</a>
+
+                </div>
+
+                <div class="w-full self-end pb-0 px-4 lg:w-1/2  lg:pb-0">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0">
+                        <!-- <span class="absolute -bottom-0  left-1/2 -translate-x-1/2
+                        md:scale-125">
+                        <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#7e22ce" d="M46.3,-64.1C60,-53.7,71.2,-40.2,75.4,-25C79.6,-9.8,76.8,7.1,72.7,24.8C68.6,42.5,63.2,61,50.9,71.2C38.5,81.4,19.3,83.3,0.4,82.6C-18.4,82,-36.7,79,-51.1,69.4C-65.5,59.9,-75.8,44,-80.2,26.9C-84.7,9.8,-83.2,-8.4,-78.1,-25.7C-72.9,-43.1,-64.2,-59.7,-50.5,-70.1C-36.9,-80.6,-18.5,-85,-1.1,-83.5C16.3,-82,32.5,-74.6,46.3,-64.1Z"
+                             transform="translate(100 100) scale(1.1)" />
+                          </svg> -->
+                        <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#14b8a6"
+                            d="M55.2,-55.9C68.1,-42.3,72.8,-21.2,68.1,-4.6C63.5,11.9,49.6,23.8,36.7,35.7C23.8,47.7,11.9,59.7,-3.1,62.9C-18.1,66,-36.2,60.2,-47.7,48.2C-59.2,36.2,-64,18.1,-65.3,-1.3C-66.6,-20.7,-64.3,-41.4,-52.9,-54.9C-41.4,-68.5,-20.7,-75,0.2,-75.2C21.2,-75.4,42.3,-69.5,55.2,-55.9Z"
+                            transform="translate(100 100) scale(1.2)" />
+                        </svg> -->
+                        <!-- </span> -->
+                        <img src="src/img/pict2.png" alt="edy" width="" height="650"
+                            class="max-w-full mx-auto relative" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Hero Sectionbg End -->
+
+    <!-- Destinasi section -->
+    <section id="destinasi" class="pt-8 pb-20 bg-slate-100/20 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4 text-center">
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Destinasi Favorit</h1>
+                <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Rekomendasi tempat terindah yang paling dikunjungi di Indonesia</p>
+            </div>
+            <div class="w-full flex px-4 flex-wrap justify-center">
+
+                <div class="w-full lg:w-1/3 px-2 mb-2">
+                    <div
+                        class=" bg-white border h-full border-gray-200 rounded-lg shadow dark:bg-dark dark:border-gray-700 mx-1  md:mb-2">
+                        <a href="#">
+                            <img class="rounded-t-lg object-cover h-52 w-full" src="./src/img/Bali.jpg" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Bali</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam quam error culpa sapiente architecto impedit voluptas recusandae mollitia, dolorum nemo distinctio suscipit nobis, possimus voluptate praesentium?</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 px-2 mb-2">
+                    <div
+                        class=" bg-white border h-full border-gray-200 rounded-lg shadow dark:bg-dark dark:border-gray-700 mx-1 md:mb-2">
+                        <a href="#">
+                            <img class="rounded-t-lg object-cover h-52 w-full" src="./src/img/jogja.jpg" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Jogjakarta</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem odit adipisci ut. Sint pariatur aspernatur harum perferendis eligendi? Laborum, qui quaerat? Itaque temporibus iusto libero repellat animi, quae vitae.</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full  lg:w-1/3 px-2 mb-2">
+                    <div
+                        class=" bg-white border h-full border-gray-200 rounded-lg shadow dark:bg-dark dark:border-gray-700 mx-1 md:mb-2">
+                        <a href="#">
+                            <img class="rounded-t-lg object-cover h-52 w-full" src="./src/img/RajaAmpat.jpg" alt="" />
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                    Raja Ampat</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit, ratione, necessitatibus ipsum optio fuga similique facere maxime deleniti omnis quas mollitia quidem cum minima ut eaque? Maiores, similique nemo.</p>
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Destinasi section end-->
+    <!-- Reservasi section -->
+    <section id="reservasi" class="pt-8 pb-2 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class="w-full self center px-4 lg:w-1/2 lg:pt-32">
+                    <h1 class=" font-extrabold py-4 text-dark text-5xl mx-1 lg:text-5xl dark:text-white">
+                        Gak mau ngantri? Reservasi aja! 👍
+                    </h1>
+                    <p class="mb-3 mx-1 font-medium text-slate-400 leading-relaxed">Mudah, hanya dengan 3 langkah</p>
+                <div class="mx-4">          
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+                        
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">STEP 1</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Cari tempat yang kamu mau 🔍</h3>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize.</p>
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">STEP 2</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Isi data dan konfirmasi pembayaran 📝</h3>
+                            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Tulis dan lengkapi data kamu untuk keperluan data booking.</p>
+                        </li>
+                        <li class="mb-10 ms-4">
+                            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">STEP 3</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Tinggal masuk dan enjoy! 😍</h3>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan.</p>
+                            
+                        </li>
+                    </ol>
+                </div>
+
+                </div>
+
+                <div class="w-full self-end pb-0 px-4 lg:w-1/2  lg:pb-0">
+                    <div class="relative mt-10 lg:mt-0 lg:right-0">
+                        <img src="src/img/pict3.png" alt="edy" width="" height="650"
+                            class="max-w-full mx-auto relative" />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Reservasi section end -->
+
+    <section id="reservasi" class="pb-20 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4 text-center">
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    FAQ</h1>
+                <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            
+            <div id="accordion-collapse" data-accordion="collapse">
+                <h2 id="accordion-collapse-heading-1">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <span>Kenapa harus memilih Liburans?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quia quae neque doloremque saepe minima reiciendis officia debitis quaerat mollitia similique ducimus hic ea, adipisci nam magnam sapiente pariatur libero. </p>
+                    </div>
+                </div>
+                <h2 id="accordion-collapse-heading-2">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                    <span>Apa rekomendasi tempat buat orang yang jomblo? </span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe esse libero accusantium ipsum aut eveniet illo dolorem ad maiores, harum quidem inventore distinctio quos maxime quasi ipsam pariatur ullam reprehenderit?</p>
+                    </div>
+                </div>
+                <h2 id="accordion-collapse-heading-3">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                    <span>Kenapa ya pembayaranku gagal bang?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, explicabo eos repudiandae inventore sit voluptates ab maxime odit est voluptas praesentium tenetur corporis necessitatibus ad. Amet eum porro illo cupiditate.</p>
+                    
+                </div>
+                </div>
+            </div>
+  
+        </div>
+    </section>
+    <section class="bg-dark">
+        afshjkl;'sa;dsglfkjfaksl;
+        dslfjkl;'
+    </section>
+
+<!-- Back to top -->
+<a href="#home" class="hidden h-12 w-12 bg-primary rounded-full fixed z-[9999] bottom-4 right-4 p-4 text-white items-center justify-center
+hover:bg-opacity-80  shadow-lg ring-1 ring-white ring-opacity-20" id="to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+      </svg>
+  </a>
+  <!-- Back to top -->
+</body>
+<script src="src/js/script.js"></script>
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+</html>
